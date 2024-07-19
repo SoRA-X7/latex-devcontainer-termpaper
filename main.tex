@@ -1,0 +1,88 @@
+\documentclass[report]{jsbook}
+
+\bibliographystyle{junsrt}
+
+\usepackage[dvipdfmx]{graphicx}
+\usepackage[dvipdfmx]{color}
+\usepackage{okumacro}
+\usepackage{url}
+\usepackage{graphicx}
+%\usepackage{svg}
+
+\usepackage{fancybox,ascmac}
+\usepackage{algorithm}
+\usepackage{algpseudocodex}
+\usepackage{colortbl}
+\usepackage{listings}
+\usepackage{/sty/plistings}
+\usepackage{url}
+\usepackage[noreplace]{otf}
+
+\usepackage{array,graphicx}
+\usepackage{booktabs}
+\usepackage{pifont}
+
+\usepackage{multicol}
+
+%\usepackage{xtab}
+% \usepackage{supertabular}
+\usepackage{tabularx}
+\usepackage{hhline} 
+\usepackage{longtable}
+% \usepackage{multirow}
+\usepackage{scalefnt}
+
+\usepackage{amsmath}
+
+\usepackage[hang,small,bf]{caption}
+\usepackage[subrefformat=parens]{subcaption}
+\usepackage{here}
+
+
+\usepackage{ascmac}
+
+\captionsetup{compatibility=false}
+
+\lstset{
+	language={Java},
+	basicstyle={\small},
+	breaklines={true},
+	frame=tRBl,
+	framesep=5pt,
+}
+
+\setcounter{tocdepth}{2}
+
+\newcommand{\Hline}[1]{\noalign{\hrule height #1}}   
+\newcommand{\ctext}[1]{\raise0.2ex\hbox{\textcircled{\scriptsize{#1}}}}
+
+\begin{document}
+\input{src/title.tex}
+\frontmatter
+\input{src/abstract_ja.tex}
+\setlength{\baselineskip}{16pt}
+\input{src/abstract_en.tex}
+%\setlength{\baselineskip}{16pt}
+%\input{thanks.tex}
+\setlength{\baselineskip}{16pt}
+\renewcommand{\contentsname}{目次}
+\tableofcontents
+\renewcommand{\listfigurename}{図目次}
+\listoffigures
+\renewcommand{\listtablename}{表目次}
+\listoftables
+
+\mainmatter
+\input{src/1.tex}
+\input{src/2.tex}
+\input{src/3.tex}
+\input{src/4.tex}
+\input{src/5.tex}
+\input{src/6.tex}
+\input{src/thanks.tex}
+
+\bibliography{src/cites.bib}
+
+\appendix
+
+\end{document}
