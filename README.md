@@ -1,4 +1,4 @@
-# latex-devcontainer-thesis
+# latex-devcontainer-termpaper
 
 DevContainer でタームペーパーを執筆するためのテンプレートです。
 
